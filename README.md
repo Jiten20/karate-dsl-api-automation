@@ -1,60 +1,163 @@
 # Karate DSL API Automation Framework
 
-This project demonstrates API automation testing using Karate DSL, Java 8, Maven and JUnit 5.
+A Java 8 API automation project built with **Karate DSL**, **JUnit 5**, and **Maven**. The suite tests the public Restful Booker Platform at `https://automationintesting.online` and covers branding, room inventory, and booking creation APIs.
 
-## Technologies
+## Project at a glance
 
-* Java 8
-* Karate DSL 1.3.1
-* Maven
-* JUnit 5
-* Eclipse
+| Metric | Count |
+|---|---:|
+| Feature files | **3** |
+| Test scenarios | **7** |
+| API resources covered | **3** |
+| HTTP methods used | **2** |
+| Positive scenarios | **4** |
+| Negative scenarios | **3** |
+| JUnit runner classes | **1** |
+| Karate version | **1.3.1** |
+| Java version | **8** |
 
-## APIs Covered
+## Test coverage by numbers
 
-### Branding API
+### 1. Branding API
 
-* Sends a GET request to retrieve branding information.
-* Validates the HTTP status code.
-* Validates response values.
-* Validates the email format using a regular expression.
+- **1** scenario
+- **1** GET request: `/api/branding`
+- Validates HTTP **200**
+- Validates the B&B name
+- Validates the contact email using **1** regular expression
 
-### Room Inventory API
+### 2. Room Inventory API
 
-* Retrieves the available room inventory.
-* Verifies that the rooms response is an array.
-* Verifies that at least one room is available.
-* Verifies that at least one room has a price greater than zero.
+- **2** scenarios
+- GET request: `/api/room/`
+- Validates HTTP **200**
+- Verifies that `rooms` is an array
+- Verifies that the array contains at least **1** room
+- Verifies that every returned room has `roomPrice > 0`
 
-### Booking API
+### 3. Booking API
 
-* Dynamically retrieves a valid room ID.
-* Creates a booking using future check-in and checkout dates.
-* Verifies the generated booking ID.
-* Verifies the booking response details.
-* Includes negative test scenarios for invalid booking requests.
+- **4** scenarios
+- **1** positive booking scenario
+- **3** negative booking scenarios
+- POST request: `/api/booking`
+- Fetches a valid `roomid` dynamically before each scenario
+- Generates future check-in and checkout dates at runtime
+- Validates HTTP **201** for successful booking creation
+- Validates the generated `bookingid` and returned guest details
+- Covers missing firstname, invalid date order, and missing Content-Type cases
 
-## Running the Tests
+## Technology stack
 
-Run all tests using Maven:
+| Tool | Version / Purpose |
+|---|---|
+| Java | 8 |
+| Karate DSL | 1.3.1 |
+| JUnit | 5 via `karate-junit5` |
+| Maven | Build and test execution |
+| Maven Surefire | 2.22.2 |
+| Eclipse | Development IDE |
+
+## Project structure
+
+```text
+APITestingKarateDSL/
+├── pom.xml
+├── src/test/java/
+│   ├── karate-config.js
+│   └── features/
+│       ├── TestRunners.java
+│       ├── getbrandinginformation.feature
+│       ├── getlistavailablerooms.feature
+│       └── bookroom.feature
+└── target/karate-reports/
+    └── karate-summary.html
+```
+
+## Prerequisites
+
+- Java JDK 8
+- Maven 3.x
+- Git
+- Internet access to `https://automationintesting.online`
+
+Verify the installations:
+
+```bash
+java -version
+mvn -version
+git --version
+```
+
+## Run the complete suite
+
+From the project root, execute:
 
 ```bash
 mvn clean test -Dtest=TestRunners
 ```
 
-## Test Report
+Run using the development environment configuration:
 
-After execution, the Karate HTML report is generated at:
+```bash
+mvn clean test -Dtest=TestRunners -Dkarate.env=dev
+```
+
+A successful full run executes:
+
+```text
+Tests run: 7
+Failures: 0
+Errors: 0
+Skipped: 0
+```
+
+## Test report
+
+After execution, open the generated Karate report:
 
 ```text
 target/karate-reports/karate-summary.html
 ```
 
-## Framework Highlights
+The report includes:
 
-* Independent and atomic test scenarios
-* Dynamic test-data generation
-* Positive and negative API testing
-* JSON response and schema validation
-* Karate HTML reporting
-* Maven-based test execution
+- Feature-level results
+- Scenario-level execution details
+- Request and response data
+- Assertion failures
+- Execution duration and timeline
+
+## Key framework features
+
+- Atomic and independent booking scenarios
+- Dynamic extraction of a valid room ID
+- Runtime generation of future booking dates
+- JSON response validation
+- Array and business-rule validation
+- Regex-based email validation
+- Positive and negative API testing
+- Centralized environment configuration
+- Combined execution through one JUnit 5 runner
+- Native Karate HTML reporting
+
+## Current suite breakdown
+
+| Feature | Scenarios | Positive | Negative |
+|---|---:|---:|---:|
+| Branding Verification | 1 | 1 | 0 |
+| Room Inventory | 2 | 2 | 0 |
+| Booking Creation | 4 | 1 | 3 |
+| **Total** | **7** | **4** | **3** |
+
+## Notes
+
+- The test environment may reset periodically, so booking scenarios fetch a valid room ID before execution.
+- The `target/` directory is generated by Maven and should remain excluded from Git through `.gitignore`.
+- The production URL in `karate-config.js` is currently a placeholder and should be replaced only when a real production endpoint is available.
+
+## Author
+
+**Jiten Motwani**
+
+This project was created to demonstrate practical API test automation using Karate DSL, Java, Maven, and JUnit 5.
