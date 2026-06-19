@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("ae8a20e2-4573-4265-bbec-1bff98cf1841",{name:"jiten"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.getlistavailablerooms</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-06-18 08:43:33 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Verify response is an array</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:18]"><span>[2:18]</span> <span>Verify room length is greater than zero</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/getlistavailablerooms.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Room Inventory</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Verify response is an array</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>335</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">20:43:32.939 Running tests in environment: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/api/room/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">295</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">20:43:32.942 request:
+1 &gt; GET https://automationintesting.online/api/room
+1 &gt; Host: automationintesting.online
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:43:33.225 response time in milliseconds: 283
+1 &lt; 200
+1 &lt; Date: Thu, 18 Jun 2026 19:43:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: cloudflare
+1 &lt; vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+1 &lt; x-railway-edge: railway/europe-west4-drams3a
+1 &lt; x-railway-request-id: EVkcO3p0R5alO_owWVMv1w
+1 &lt; x-hikari-trace: cdg1.e9jw
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=mTO%2FlwAFA3R4os3JyKlovikJERjiiTTgkiQdFWzgl7MkX211N8UqjU7EbknhiWcPt3LiBl1B9NfpOU7i5m%2F3xRzrMtEmUNIMVb9zQijiuN4yiOz04NDx%2FXsa7KLrO7e8T9wR6VsAX5STKPTcxQ%3D%3D&quot;}]}
+1 &lt; CF-RAY: a0dcc8983e9076d5-LHR
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;rooms&quot;:[{&quot;accessible&quot;:true,&quot;description&quot;:&quot;Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.&quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;image&quot;:&quot;/images/room1.jpg&quot;,&quot;roomName&quot;:&quot;101&quot;,&quot;roomPrice&quot;:100,&quot;roomid&quot;:1,&quot;type&quot;:&quot;Single&quot;},{&quot;accessible&quot;:true,&quot;description&quot;:&quot;Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. &quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;Radio&quot;,&quot;Safe&quot;],&quot;image&quot;:&quot;/images/room2.jpg&quot;,&quot;roomName&quot;:&quot;102&quot;,&quot;roomPrice&quot;:150,&quot;roomid&quot;:2,&quot;type&quot;:&quot;Double&quot;},{&quot;accessible&quot;:true,&quot;description&quot;:&quot;Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. &quot;,&quot;features&quot;:[&quot;Radio&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;image&quot;:&quot;/images/room3.jpg&quot;,&quot;roomName&quot;:&quot;103&quot;,&quot;roomPrice&quot;:225,&quot;roomid&quot;:3,&quot;type&quot;:&quot;Suite&quot;},{&quot;accessible&quot;:true,&quot;description&quot;:&quot;Please enter a description for this room&quot;,&quot;features&quot;:[&quot;WiFi&quot;,&quot;TV&quot;,&quot;Radio&quot;],&quot;image&quot;:&quot;https://www.mwtestconsultancy.co.uk/img/room1.jpg&quot;,&quot;roomName&quot;:&quot;A12@B&quot;,&quot;roomPrice&quot;:999,&quot;roomid&quot;:4,&quot;type&quot;:&quot;Twin&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">20:43:33.236 [print] {
+  &quot;rooms&quot;: [
+    {
+      &quot;accessible&quot;: true,
+      &quot;description&quot;: &quot;Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.&quot;,
+      &quot;features&quot;: [
+        &quot;TV&quot;,
+        &quot;WiFi&quot;,
+        &quot;Safe&quot;
+      ],
+      &quot;image&quot;: &quot;/images/room1.jpg&quot;,
+      &quot;roomName&quot;: &quot;101&quot;,
+      &quot;roomPrice&quot;: 100,
+      &quot;roomid&quot;: 1,
+      &quot;type&quot;: &quot;Single&quot;
+    },
+    {
+      &quot;accessible&quot;: true,
+      &quot;description&quot;: &quot;Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. &quot;,
+      &quot;features&quot;: [
+        &quot;TV&quot;,
+        &quot;Radio&quot;,
+        &quot;Safe&quot;
+      ],
+      &quot;image&quot;: &quot;/images/room2.jpg&quot;,
+      &quot;roomName&quot;: &quot;102&quot;,
+      &quot;roomPrice&quot;: 150,
+      &quot;roomid&quot;: 2,
+      &quot;type&quot;: &quot;Double&quot;
+    },
+    {
+      &quot;accessible&quot;: true,
+      &quot;description&quot;: &quot;Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. &quot;,
+      &quot;features&quot;: [
+        &quot;Radio&quot;,
+        &quot;WiFi&quot;,
+        &quot;Safe&quot;
+      ],
+      &quot;image&quot;: &quot;/images/room3.jpg&quot;,
+      &quot;roomName&quot;: &quot;103&quot;,
+      &quot;roomPrice&quot;: 225,
+      &quot;roomid&quot;: 3,
+      &quot;type&quot;: &quot;Suite&quot;
+    },
+    {
+      &quot;accessible&quot;: true,
+      &quot;description&quot;: &quot;Please enter a description for this room&quot;,
+      &quot;features&quot;: [
+        &quot;WiFi&quot;,
+        &quot;TV&quot;,
+        &quot;Radio&quot;
+      ],
+      &quot;image&quot;: &quot;https://www.mwtestconsultancy.co.uk/img/room1.jpg&quot;,
+      &quot;roomName&quot;: &quot;A12@B&quot;,
+      &quot;roomPrice&quot;: 999,
+      &quot;roomid&quot;: 4,
+      &quot;type&quot;: &quot;Twin&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Karate built-in: &#39;#[]&#39; asserts the value is an array</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.rooms == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">34</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># &#39;##[]&#39; would allow empty; &#39;#[_ &gt; 0]&#39; checks length is greater than 0</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.rooms == &#39;#[_ &gt; 0]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:18]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:18]</span>
+                <span class="scenario-name">Verify room length is greater than zero</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>316</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:18]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">20:43:33.286 Running tests in environment: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/api/room/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">299</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">20:43:33.291 request:
+1 &gt; GET https://automationintesting.online/api/room
+1 &gt; Host: automationintesting.online
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:43:33.584 response time in milliseconds: 279
+1 &lt; 200
+1 &lt; Date: Thu, 18 Jun 2026 19:43:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: cloudflare
+1 &lt; vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+1 &lt; x-railway-edge: railway/europe-west4-drams3a
+1 &lt; x-railway-request-id: QluO51W3QZOchhI9YqdHTg
+1 &lt; x-hikari-trace: cdg1.8vsn
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=OxVJzKjGPbJoOJi4rCEZPoaIwO8tDvMikjcjNvhDSNoEYm4KscijVz0DP0fe3AaY2MdugvHPtYmB%2Bu3Tz9K5nwlHqlMoHiLiak%2BEXEcnYwHIfE3RM9JV2GJcrk%2BkOJpKGUW6VjwM%2BOCzDs%2F9aw%3D%3D&quot;}]}
+1 &lt; CF-RAY: a0dcc89a4a35f663-LHR
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;rooms&quot;:[{&quot;accessible&quot;:true,&quot;description&quot;:&quot;Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.&quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;image&quot;:&quot;/images/room1.jpg&quot;,&quot;roomName&quot;:&quot;101&quot;,&quot;roomPrice&quot;:100,&quot;roomid&quot;:1,&quot;type&quot;:&quot;Single&quot;},{&quot;accessible&quot;:true,&quot;description&quot;:&quot;Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. &quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;Radio&quot;,&quot;Safe&quot;],&quot;image&quot;:&quot;/images/room2.jpg&quot;,&quot;roomName&quot;:&quot;102&quot;,&quot;roomPrice&quot;:150,&quot;roomid&quot;:2,&quot;type&quot;:&quot;Double&quot;},{&quot;accessible&quot;:true,&quot;description&quot;:&quot;Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. &quot;,&quot;features&quot;:[&quot;Radio&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;image&quot;:&quot;/images/room3.jpg&quot;,&quot;roomName&quot;:&quot;103&quot;,&quot;roomPrice&quot;:225,&quot;roomid&quot;:3,&quot;type&quot;:&quot;Suite&quot;},{&quot;accessible&quot;:true,&quot;description&quot;:&quot;Please enter a description for this room&quot;,&quot;features&quot;:[&quot;WiFi&quot;,&quot;TV&quot;,&quot;Radio&quot;],&quot;image&quot;:&quot;https://www.mwtestconsultancy.co.uk/img/room1.jpg&quot;,&quot;roomName&quot;:&quot;A12@B&quot;,&quot;roomPrice&quot;:999,&quot;roomid&quot;:4,&quot;type&quot;:&quot;Twin&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">20:43:33.587 [print] {
+  &quot;rooms&quot;: [
+    {
+      &quot;accessible&quot;: true,
+      &quot;description&quot;: &quot;Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.&quot;,
+      &quot;features&quot;: [
+        &quot;TV&quot;,
+        &quot;WiFi&quot;,
+        &quot;Safe&quot;
+      ],
+      &quot;image&quot;: &quot;/images/room1.jpg&quot;,
+      &quot;roomName&quot;: &quot;101&quot;,
+      &quot;roomPrice&quot;: 100,
+      &quot;roomid&quot;: 1,
+      &quot;type&quot;: &quot;Single&quot;
+    },
+    {
+      &quot;accessible&quot;: true,
+      &quot;description&quot;: &quot;Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. &quot;,
+      &quot;features&quot;: [
+        &quot;TV&quot;,
+        &quot;Radio&quot;,
+        &quot;Safe&quot;
+      ],
+      &quot;image&quot;: &quot;/images/room2.jpg&quot;,
+      &quot;roomName&quot;: &quot;102&quot;,
+      &quot;roomPrice&quot;: 150,
+      &quot;roomid&quot;: 2,
+      &quot;type&quot;: &quot;Double&quot;
+    },
+    {
+      &quot;accessible&quot;: true,
+      &quot;description&quot;: &quot;Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. &quot;,
+      &quot;features&quot;: [
+        &quot;Radio&quot;,
+        &quot;WiFi&quot;,
+        &quot;Safe&quot;
+      ],
+      &quot;image&quot;: &quot;/images/room3.jpg&quot;,
+      &quot;roomName&quot;: &quot;103&quot;,
+      &quot;roomPrice&quot;: 225,
+      &quot;roomid&quot;: 3,
+      &quot;type&quot;: &quot;Suite&quot;
+    },
+    {
+      &quot;accessible&quot;: true,
+      &quot;description&quot;: &quot;Please enter a description for this room&quot;,
+      &quot;features&quot;: [
+        &quot;WiFi&quot;,
+        &quot;TV&quot;,
+        &quot;Radio&quot;
+      ],
+      &quot;image&quot;: &quot;https://www.mwtestconsultancy.co.uk/img/room1.jpg&quot;,
+      &quot;roomName&quot;: &quot;A12@B&quot;,
+      &quot;roomPrice&quot;: 999,
+      &quot;roomid&quot;: 4,
+      &quot;type&quot;: &quot;Twin&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># &#39;#each&#39; iterates over every element in the array and applies the match</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response.rooms contains { roomPrice: &#39;#? _ &gt; 0&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

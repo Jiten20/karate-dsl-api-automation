@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: features.TestRunners
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.326 s <<< FAILURE! - in features.TestRunners
+runAllApiTests[3][1]  Time elapsed: 0.619 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 409, expected: 201, response time in milliseconds: 223, url: https://automationintesting.online/api/booking, response: 
+{"error":"Failed to create booking"}
+classpath:features/bookroom.feature:42
+

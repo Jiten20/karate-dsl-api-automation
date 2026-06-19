@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="features.TestRunners" time="10.326" tests="7" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="E:\NeonWorkspace\APITestingKarateDSL\target\test-classes;E:\NeonWorkspace\APITestingKarateDSL\target\classes;C:\Users\jiten\.m2\repository\com\intuit\karate\karate-junit5\1.3.1\karate-junit5-1.3.1.jar;C:\Users\jiten\.m2\repository\com\intuit\karate\karate-core\1.3.1\karate-core-1.3.1.jar;C:\Users\jiten\.m2\repository\org\graalvm\js\js-scriptengine\22.0.0.2\js-scriptengine-22.0.0.2.jar;C:\Users\jiten\.m2\repository\org\graalvm\sdk\graal-sdk\22.0.0.2\graal-sdk-22.0.0.2.jar;C:\Users\jiten\.m2\repository\org\graalvm\js\js\22.0.0.2\js-22.0.0.2.jar;C:\Users\jiten\.m2\repository\org\graalvm\regex\regex\22.0.0.2\regex-22.0.0.2.jar;C:\Users\jiten\.m2\repository\org\graalvm\truffle\truffle-api\22.0.0.2\truffle-api-22.0.0.2.jar;C:\Users\jiten\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\jiten\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\jiten\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\jiten\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\jiten\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\jiten\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\jiten\.m2\repository\com\linecorp\armeria\armeria\1.18.0\armeria-1.18.0.jar;C:\Users\jiten\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.3\jackson-core-2.13.3.jar;C:\Users\jiten\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.3\jackson-annotations-2.13.3.jar;C:\Users\jiten\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.3\jackson-databind-2.13.3.jar;C:\Users\jiten\.m2\repository\io\micrometer\micrometer-core\1.9.2\micrometer-core-1.9.2.jar;C:\Users\jiten\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\jiten\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\jiten\.m2\repository\io\netty\netty-transport\4.1.79.Final\netty-transport-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-common\4.1.79.Final\netty-common-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-buffer\4.1.79.Final\netty-buffer-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-resolver\4.1.79.Final\netty-resolver-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-codec-haproxy\4.1.79.Final\netty-codec-haproxy-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-codec\4.1.79.Final\netty-codec-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-codec-http2\4.1.79.Final\netty-codec-http2-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-handler\4.1.79.Final\netty-handler-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-codec-http\4.1.79.Final\netty-codec-http-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-resolver-dns\4.1.79.Final\netty-resolver-dns-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-codec-dns\4.1.79.Final\netty-codec-dns-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\jiten\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\jiten\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.79.Final\netty-transport-native-unix-common-4.1.79.Final-linux-x86_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-transport-native-epoll\4.1.79.Final\netty-transport-native-epoll-4.1.79.Final-linux-x86_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.79.Final\netty-transport-native-unix-common-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.79.Final\netty-transport-classes-epoll-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.79.Final\netty-resolver-dns-native-macos-4.1.79.Final-osx-x86_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.79.Final\netty-resolver-dns-classes-macos-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.79.Final\netty-resolver-dns-native-macos-4.1.79.Final-osx-aarch_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-linux-x86_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-tcnative-classes\2.0.53.Final\netty-tcnative-classes-2.0.53.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-linux-aarch_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-osx-x86_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-osx-aarch_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-windows-x86_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-handler-proxy\4.1.79.Final\netty-handler-proxy-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-codec-socks\4.1.79.Final\netty-codec-socks-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.7.1\brotli4j-1.7.1.jar;C:\Users\jiten\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.7.1\native-windows-x86_64-1.7.1.jar;C:\Users\jiten\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\jiten\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\jiten\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\jiten\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\jiten\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\jiten\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.32\jcl-over-slf4j-1.7.32.jar;C:\Users\jiten\.m2\repository\org\antlr\antlr4-runtime\4.9.3\antlr4-runtime-4.9.3.jar;C:\Users\jiten\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\jiten\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\jiten\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\jiten\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\jiten\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\jiten\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\jiten\.m2\repository\org\yaml\snakeyaml\1.32\snakeyaml-1.32.jar;C:\Users\jiten\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\jiten\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\jiten\.m2\repository\io\github\classgraph\classgraph\4.8.149\classgraph-4.8.149.jar;C:\Users\jiten\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\jiten\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\jiten\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\jiten\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\jiten\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\jiten\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\jiten\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\jiten\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\jiten\AppData\Local\Temp\surefire3722839926885224069\surefirebooter6817024772229789697.jar C:\Users\jiten\AppData\Local\Temp\surefire3722839926885224069 2026-06-18T20-43-24_371-jvmRun1 surefire2235161476653984634tmp surefire_01904241008283103179tmp"/>
+    <property name="test" value="TestRunners"/>
+    <property name="surefire.test.class.path" value="E:\NeonWorkspace\APITestingKarateDSL\target\test-classes;E:\NeonWorkspace\APITestingKarateDSL\target\classes;C:\Users\jiten\.m2\repository\com\intuit\karate\karate-junit5\1.3.1\karate-junit5-1.3.1.jar;C:\Users\jiten\.m2\repository\com\intuit\karate\karate-core\1.3.1\karate-core-1.3.1.jar;C:\Users\jiten\.m2\repository\org\graalvm\js\js-scriptengine\22.0.0.2\js-scriptengine-22.0.0.2.jar;C:\Users\jiten\.m2\repository\org\graalvm\sdk\graal-sdk\22.0.0.2\graal-sdk-22.0.0.2.jar;C:\Users\jiten\.m2\repository\org\graalvm\js\js\22.0.0.2\js-22.0.0.2.jar;C:\Users\jiten\.m2\repository\org\graalvm\regex\regex\22.0.0.2\regex-22.0.0.2.jar;C:\Users\jiten\.m2\repository\org\graalvm\truffle\truffle-api\22.0.0.2\truffle-api-22.0.0.2.jar;C:\Users\jiten\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\jiten\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\jiten\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\jiten\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\jiten\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\jiten\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\jiten\.m2\repository\com\linecorp\armeria\armeria\1.18.0\armeria-1.18.0.jar;C:\Users\jiten\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.3\jackson-core-2.13.3.jar;C:\Users\jiten\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.3\jackson-annotations-2.13.3.jar;C:\Users\jiten\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.3\jackson-databind-2.13.3.jar;C:\Users\jiten\.m2\repository\io\micrometer\micrometer-core\1.9.2\micrometer-core-1.9.2.jar;C:\Users\jiten\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\jiten\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\jiten\.m2\repository\io\netty\netty-transport\4.1.79.Final\netty-transport-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-common\4.1.79.Final\netty-common-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-buffer\4.1.79.Final\netty-buffer-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-resolver\4.1.79.Final\netty-resolver-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-codec-haproxy\4.1.79.Final\netty-codec-haproxy-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-codec\4.1.79.Final\netty-codec-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-codec-http2\4.1.79.Final\netty-codec-http2-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-handler\4.1.79.Final\netty-handler-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-codec-http\4.1.79.Final\netty-codec-http-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-resolver-dns\4.1.79.Final\netty-resolver-dns-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-codec-dns\4.1.79.Final\netty-codec-dns-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\jiten\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\jiten\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.79.Final\netty-transport-native-unix-common-4.1.79.Final-linux-x86_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-transport-native-epoll\4.1.79.Final\netty-transport-native-epoll-4.1.79.Final-linux-x86_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.79.Final\netty-transport-native-unix-common-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.79.Final\netty-transport-classes-epoll-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.79.Final\netty-resolver-dns-native-macos-4.1.79.Final-osx-x86_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.79.Final\netty-resolver-dns-classes-macos-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.79.Final\netty-resolver-dns-native-macos-4.1.79.Final-osx-aarch_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-linux-x86_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-tcnative-classes\2.0.53.Final\netty-tcnative-classes-2.0.53.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-linux-aarch_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-osx-x86_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-osx-aarch_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-windows-x86_64.jar;C:\Users\jiten\.m2\repository\io\netty\netty-handler-proxy\4.1.79.Final\netty-handler-proxy-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\io\netty\netty-codec-socks\4.1.79.Final\netty-codec-socks-4.1.79.Final.jar;C:\Users\jiten\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.7.1\brotli4j-1.7.1.jar;C:\Users\jiten\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.7.1\native-windows-x86_64-1.7.1.jar;C:\Users\jiten\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\jiten\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\jiten\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\jiten\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\jiten\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\jiten\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.32\jcl-over-slf4j-1.7.32.jar;C:\Users\jiten\.m2\repository\org\antlr\antlr4-runtime\4.9.3\antlr4-runtime-4.9.3.jar;C:\Users\jiten\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\jiten\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\jiten\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\jiten\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\jiten\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\jiten\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\jiten\.m2\repository\org\yaml\snakeyaml\1.32\snakeyaml-1.32.jar;C:\Users\jiten\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\jiten\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\jiten\.m2\repository\io\github\classgraph\classgraph\4.8.149\classgraph-4.8.149.jar;C:\Users\jiten\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\jiten\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\jiten\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\jiten\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\jiten\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\jiten\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\jiten\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\jiten\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\jiten"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_281\jre"/>
+    <property name="basedir" value="E:\NeonWorkspace\APITestingKarateDSL"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\jiten\AppData\Local\Temp\surefire3722839926885224069\surefirebooter6817024772229789697.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_281\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_281-b09"/>
+    <property name="user.name" value="jiten"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\jiten\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\jiten\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_281"/>
+    <property name="user.dir" value="E:\NeonWorkspace\APITestingKarateDSL"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_281/bin/server;C:/Program Files/Java/jre1.8.0_281/bin;C:/Program Files/Java/jre1.8.0_281/lib/amd64;C:\Python314\Scripts\;C:\Python314\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.7.0_80\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_281\bin;%Hadoop_Home%\bin;%SPARK_HOME%\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\jiten\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\jiten\AppData\Local\Programs\Python\Python37\;C:\Users\jiten\AppData\Local\Microsoft\WindowsApps;C:\Users\jiten\AppData\Local\Microsoft\WindowsApps;C:\spark2.4.7\bin;C:\Hadoop\bin;C:\Users\jiten\AppData\Roaming\npm;E:\NeonEclipse\eclipse-java-neon-3-win32-x86_64\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.281-b09"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="runAllApiTests[1][1]" classname="features.TestRunners" time="5.327"/>
+  <testcase name="runAllApiTests[2][1]" classname="features.TestRunners" time="0.341"/>
+  <testcase name="runAllApiTests[2][2]" classname="features.TestRunners" time="0.479"/>
+  <testcase name="runAllApiTests[3][1]" classname="features.TestRunners" time="0.619">
+    <failure message="status code was: 409, expected: 201, response time in milliseconds: 223, url: https://automationintesting.online/api/booking, response: &#10;{&quot;error&quot;:&quot;Failed to create booking&quot;}&#10;classpath:features/bookroom.feature:42" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 409, expected: 201, response time in milliseconds: 223, url: https://automationintesting.online/api/booking, response: 
+{"error":"Failed to create booking"}
+classpath:features/bookroom.feature:42
+</failure>
+    <system-out><![CDATA[20:43:33.767 [main] INFO com.intuit.karate - Running tests in environment: null 
+20:43:33.769 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+20:43:33.769 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+20:43:33.769 [main] DEBUG com.intuit.karate - request:
+1 > GET https://automationintesting.online/api/room
+1 > Host: automationintesting.online
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:43:33.772 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://automationintesting.online:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+20:43:33.772 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {s}->https://automationintesting.online:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+20:43:33.772 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://automationintesting.online:443
+20:43:33.772 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to automationintesting.online/172.67.221.133:443
+20:43:33.772 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to automationintesting.online/172.67.221.133:443 with timeout 30000
+20:43:33.783 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.2, TLSv1.1, TLSv1]
+20:43:33.783 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+20:43:33.783 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+20:43:33.853 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+20:43:33.853 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+20:43:33.853 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+20:43:33.853 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=automationintesting.online
+20:43:33.853 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [automationintesting.online, *.automationintesting.online]
+20:43:33.853 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=WE1, O=Google Trust Services, C=US
+20:43:33.853 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.2:61932<->172.67.221.133:443
+20:43:33.853 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-3: set socket timeout to 30000
+20:43:33.853 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /api/room HTTP/1.1
+20:43:33.853 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+20:43:33.853 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+20:43:33.853 [main] DEBUG org.apache.http.headers - http-outgoing-3 >> GET /api/room HTTP/1.1
+20:43:33.853 [main] DEBUG org.apache.http.headers - http-outgoing-3 >> Host: automationintesting.online
+20:43:33.853 [main] DEBUG org.apache.http.headers - http-outgoing-3 >> Connection: Keep-Alive
+20:43:33.853 [main] DEBUG org.apache.http.headers - http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+20:43:33.853 [main] DEBUG org.apache.http.headers - http-outgoing-3 >> Accept-Encoding: gzip,deflate
+20:43:33.853 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "GET /api/room HTTP/1.1[\r][\n]"
+20:43:33.853 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "Host: automationintesting.online[\r][\n]"
+20:43:33.853 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+20:43:33.853 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)[\r][\n]"
+20:43:33.853 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+20:43:33.853 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "[\r][\n]"
+20:43:33.937 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "HTTP/1.1 200 OK[\r][\n]"
+20:43:33.937 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Date: Thu, 18 Jun 2026 19:43:33 GMT[\r][\n]"
+20:43:33.937 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Content-Type: application/json[\r][\n]"
+20:43:33.937 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Transfer-Encoding: chunked[\r][\n]"
+20:43:33.937 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Connection: keep-alive[\r][\n]"
+20:43:33.937 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Server: cloudflare[\r][\n]"
+20:43:33.937 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch[\r][\n]"
+20:43:33.937 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "X-Railway-Edge: railway/europe-west4-drams3a[\r][\n]"
+20:43:33.937 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "X-Railway-Request-Id: w1l1gvmIRiy28S3QN8N_Fg[\r][\n]"
+20:43:33.937 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "X-Hikari-Trace: cdg1.e9jw[\r][\n]"
+20:43:33.937 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Cf-Cache-Status: DYNAMIC[\r][\n]"
+20:43:33.937 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}[\r][\n]"
+20:43:33.937 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=N%2FOBa6KT%2BSPrMFzzXGOP%2FuQFnqt58RHWMRhtW4Mul5CMD28cFWiEyhdKA7suyZQ%2FfUAbzKzDF98p6dl2tMLrkIN9t%2BVgDg22dtdV3AD3uldIq8iRr%2FwJMXx4k31YoS7kjRv16dyVVMMMWeE89Q%3D%3D"}]}[\r][\n]"
+20:43:33.937 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Content-Encoding: gzip[\r][\n]"
+20:43:33.937 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "CF-RAY: a0dcc89c9d0b771a-LHR[\r][\n]"
+20:43:33.937 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+20:43:33.945 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "[\r][\n]"
+20:43:33.945 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "211[\r][\n]"
+20:43:33.945 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0x8d][0x93]Mo[0x13]1[0x10][0x86][0xff][0xca][0xc8][0xe7][0xd5][0xe6][0x8b][0x1e][0x92][0x13]E[0x80][0xc4][0x81]*[0xa2]U9[0xa0][0x1e]&[0xde]I2[0xe0][0x8f][0xc4]c[0x13][0xaa]*[0xff][0x9d]q[0xda]&i[0x9]j.[0xbb][0xde][0xf9]Z[0xbf][0x8f]_?[0x98][0x14][0xa3][0x17]3[0xf9][0xf1]`[0xd0]Z[0x12][0xe1][0x99]#3[0xc9][0xa9]Pc:[0x12][0x9b]x[0x95]9[0x6]31[0x97][0x14][0x8][0x3][0xac]b[0xca][0x99]sL[0xe0][0xb1]$[0x16][0x10][0xce][0x80][0x9e]28[0xb4][0x1c][0x18][0xc1]GG[0x92][0x99]Z[0xf8]R[0xcb][0xa5]P"[0xd0][0xe9][0xc5][0x8b][0xf6][0xa3][0xe3]u[0xa1][0xdc][0xc2]W$K[0x1][0x8f][0x6][0x4][0x16][0xa7]SE[0xb0][0xb6]fJ][0xf1][0xa0]q[0x8f]:[0xb0]`[0x87]0[0xd7]:[0xd1]Y[0x80][0x9a]nMc[0xe6][0x84][0xb9]$[0xaa][\n]"
+20:43:33.945 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "[0xcc][0xcd][0xad][0x6][0xbe][0xf3]g[0xd6][0xd7]5[0xce][0xc9][0xdc]5[0x86]=.T[0x8f][0xe9][0xed][0x16][0xd2][0xab]r[0x7][0xed][0xcf][0xd5]Bk[0xea][0xfa]J[0x7]jz[0xd0][0x1f]<[0x5][0xa6][0x89][0xad]F[0x6][0xfd][0xfe][0xe3]7w[0xfa][0xd1][0x98]|[0xbf][0xaa]u[0xd7][0x1c][0x16][0xca]g[0xdb][0xbc][0x8d][0xeb][0xb6]2[0x98][0x15][0xa7][0x12]$:[0xc7][0x96]s[0xe9]84[0xe0][0xc8][0xe6][0xb2][0x13][0xe1]k\[0xc0][0xc6] [0xb4].[0x98]5[0x17][0x13]y[0x88][0xc9]2[0x14][0x97][0xeb]V[0x4]29W[0xa4][0x1]r[0xc4]s[\n]"
+20:43:33.945 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "[0x1d]Pa[0xf1][0xb1][0x3]=[0x83]z[0xc]]a [0xd5][0x96][0x15]%%T[0xb2][0xd3]%[0xca][0xae][0xa9][0xc2][0xe3][0x95][0xe8][0x16]*[0xda][0x16]N[0x1][0xfb][0x86][0x1d][0xc7]7[0x88][\r]O[0x11][0x1b][0xbe]"vqDl[0xb8]'[0xf6]1[0x96][0xd9][0x99][0xc4]>eF[0xf]j[0x4][0xdd][0xf8][0xee][0xd9][0xc0]<)pv[0xe]+.[0xc1][0x5][0xab][0xf5][0x4][0xb8]k[0xe][0xd0][0xe0]79[0x8][0xba]T[0xbf]][0x95]`5[0xe3][0x95]N[0x84][0xb5]bz[0xb4]T [0xfb][0xec][0xc3][0x16][0x1e][0xff][0xa2]}{G[0xd2][0x9f][0xc8]<C9[0xc3]M[0xa3]SlF/[0xd9][0xc][0x87][0x17][0x7]6[0xa3][0x83][0x9b][\n]"
+20:43:33.945 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "[0xe7][0xf3][0xd0]L[0x1d][0xe9][0x91][0x2][0xd5]K[0x1][0x8]GI[0x98][0xab][0x5][0xf2]R[0xa5][0xd6][0xf9][0xaf]d<m[0xff][0xe8][0x9c][0x8f]D,s^[0xc9][0xa4][0xd7][0xdb]l6[0xad][0xdf]d5Pe[0xaa][0xb6][0xc3]`[0xef][[0x1b][0xdb][0xf2]Ku.[0xfe]we.[0x7][0xc3][0xf7][0x1f]^[0xca][0x1c][0x8f][0xc7][0x7][0x99][0xef][0xf6]2o6[0x1c][0xcc][0xf6]n[0xfb][0x17]m?[0xb7]cm[0x4][0x0][0x0][\r][\n]"
+20:43:33.945 [main] DEBUG org.apache.http.headers - http-outgoing-3 << HTTP/1.1 200 OK
+20:43:33.945 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Date: Thu, 18 Jun 2026 19:43:33 GMT
+20:43:33.945 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Content-Type: application/json
+20:43:33.945 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Transfer-Encoding: chunked
+20:43:33.945 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Connection: keep-alive
+20:43:33.945 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Server: cloudflare
+20:43:33.945 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+20:43:33.945 [main] DEBUG org.apache.http.headers - http-outgoing-3 << X-Railway-Edge: railway/europe-west4-drams3a
+20:43:33.945 [main] DEBUG org.apache.http.headers - http-outgoing-3 << X-Railway-Request-Id: w1l1gvmIRiy28S3QN8N_Fg
+20:43:33.945 [main] DEBUG org.apache.http.headers - http-outgoing-3 << X-Hikari-Trace: cdg1.e9jw
+20:43:33.946 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Cf-Cache-Status: DYNAMIC
+20:43:33.946 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+20:43:33.946 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=N%2FOBa6KT%2BSPrMFzzXGOP%2FuQFnqt58RHWMRhtW4Mul5CMD28cFWiEyhdKA7suyZQ%2FfUAbzKzDF98p6dl2tMLrkIN9t%2BVgDg22dtdV3AD3uldIq8iRr%2FwJMXx4k31YoS7kjRv16dyVVMMMWeE89Q%3D%3D"}]}
+20:43:33.946 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Content-Encoding: gzip
+20:43:33.946 [main] DEBUG org.apache.http.headers - http-outgoing-3 << CF-RAY: a0dcc89c9d0b771a-LHR
+20:43:33.946 [main] DEBUG org.apache.http.headers - http-outgoing-3 << alt-svc: h3=":443"; ma=86400
+20:43:33.946 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+20:43:33.946 [main] DEBUG com.intuit.karate - response time in milliseconds: 174
+1 < 200
+1 < Date: Thu, 18 Jun 2026 19:43:33 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+1 < X-Railway-Edge: railway/europe-west4-drams3a
+1 < X-Railway-Request-Id: w1l1gvmIRiy28S3QN8N_Fg
+1 < X-Hikari-Trace: cdg1.e9jw
+1 < Cf-Cache-Status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=N%2FOBa6KT%2BSPrMFzzXGOP%2FuQFnqt58RHWMRhtW4Mul5CMD28cFWiEyhdKA7suyZQ%2FfUAbzKzDF98p6dl2tMLrkIN9t%2BVgDg22dtdV3AD3uldIq8iRr%2FwJMXx4k31YoS7kjRv16dyVVMMMWeE89Q%3D%3D"}]}
+1 < CF-RAY: a0dcc89c9d0b771a-LHR
+1 < alt-svc: h3=":443"; ma=86400
+{"rooms":[{"accessible":true,"description":"Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.","features":["TV","WiFi","Safe"],"image":"/images/room1.jpg","roomName":"101","roomPrice":100,"roomid":1,"type":"Single"},{"accessible":true,"description":"Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ","features":["TV","Radio","Safe"],"image":"/images/room2.jpg","roomName":"102","roomPrice":150,"roomid":2,"type":"Double"},{"accessible":true,"description":"Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ","features":["Radio","WiFi","Safe"],"image":"/images/room3.jpg","roomName":"103","roomPrice":225,"roomid":3,"type":"Suite"},{"accessible":true,"description":"Please enter a description for this room","features":["WiFi","TV","Radio"],"image":"https://www.mwtestconsultancy.co.uk/img/room1.jpg","roomName":"A12@B","roomPrice":999,"roomid":4,"type":"Twin"}]}
+
+20:43:33.946 [main] INFO com.intuit.karate - [print] Using roomId: 1 
+20:43:33.962 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+20:43:34.084 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+20:43:34.100 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+20:43:34.100 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+20:43:34.100 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+20:43:34.108 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+20:43:34.108 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.storeFence: available
+20:43:34.108 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+20:43:34.108 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+20:43:34.108 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+20:43:34.108 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+20:43:34.108 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+20:43:34.108 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+20:43:34.108 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\jiten\AppData\Local\Temp (java.io.tmpdir)
+20:43:34.108 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+20:43:34.108 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+20:43:34.108 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1854930944 bytes
+20:43:34.108 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+20:43:34.108 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+20:43:34.108 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+20:43:34.116 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+20:43:34.116 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+20:43:34.116 [main] DEBUG com.intuit.karate - request:
+2 > POST https://automationintesting.online/api/booking
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 199
+2 > Host: automationintesting.online
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+2 > Accept-Encoding: gzip,deflate
+{"roomid":1,"firstname":"Test","lastname":"Automation","totalprice":150,"depositpaid":true,"bookingdates":{"checkin":"2026-06-20","checkout":"2026-06-23"},"additionalneeds":"Karate DSL test booking"}
+
+20:43:34.124 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://automationintesting.online:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+20:43:34.124 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 4][route: {s}->https://automationintesting.online:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+20:43:34.124 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://automationintesting.online:443
+20:43:34.124 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to automationintesting.online/172.67.221.133:443
+20:43:34.124 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to automationintesting.online/172.67.221.133:443 with timeout 30000
+20:43:34.148 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.2, TLSv1.1, TLSv1]
+20:43:34.148 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+20:43:34.148 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+20:43:34.223 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+20:43:34.225 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+20:43:34.225 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+20:43:34.225 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=automationintesting.online
+20:43:34.225 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [automationintesting.online, *.automationintesting.online]
+20:43:34.225 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=WE1, O=Google Trust Services, C=US
+20:43:34.225 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.2:61934<->172.67.221.133:443
+20:43:34.225 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-4: set socket timeout to 30000
+20:43:34.225 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /api/booking HTTP/1.1
+20:43:34.225 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+20:43:34.225 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+20:43:34.225 [main] DEBUG org.apache.http.headers - http-outgoing-4 >> POST /api/booking HTTP/1.1
+20:43:34.225 [main] DEBUG org.apache.http.headers - http-outgoing-4 >> Content-Type: application/json; charset=UTF-8
+20:43:34.225 [main] DEBUG org.apache.http.headers - http-outgoing-4 >> Content-Length: 199
+20:43:34.225 [main] DEBUG org.apache.http.headers - http-outgoing-4 >> Host: automationintesting.online
+20:43:34.225 [main] DEBUG org.apache.http.headers - http-outgoing-4 >> Connection: Keep-Alive
+20:43:34.225 [main] DEBUG org.apache.http.headers - http-outgoing-4 >> User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+20:43:34.225 [main] DEBUG org.apache.http.headers - http-outgoing-4 >> Accept-Encoding: gzip,deflate
+20:43:34.225 [main] DEBUG org.apache.http.wire - http-outgoing-4 >> "POST /api/booking HTTP/1.1[\r][\n]"
+20:43:34.225 [main] DEBUG org.apache.http.wire - http-outgoing-4 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+20:43:34.225 [main] DEBUG org.apache.http.wire - http-outgoing-4 >> "Content-Length: 199[\r][\n]"
+20:43:34.225 [main] DEBUG org.apache.http.wire - http-outgoing-4 >> "Host: automationintesting.online[\r][\n]"
+20:43:34.227 [main] DEBUG org.apache.http.wire - http-outgoing-4 >> "Connection: Keep-Alive[\r][\n]"
+20:43:34.227 [main] DEBUG org.apache.http.wire - http-outgoing-4 >> "User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)[\r][\n]"
+20:43:34.227 [main] DEBUG org.apache.http.wire - http-outgoing-4 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+20:43:34.227 [main] DEBUG org.apache.http.wire - http-outgoing-4 >> "[\r][\n]"
+20:43:34.227 [main] DEBUG org.apache.http.wire - http-outgoing-4 >> "{"roomid":1,"firstname":"Test","lastname":"Automation","totalprice":150,"depositpaid":true,"bookingdates":{"checkin":"2026-06-20","checkout":"2026-06-23"},"additionalneeds":"Karate DSL test booking"}"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "HTTP/1.1 409 Conflict[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "Date: Thu, 18 Jun 2026 19:43:34 GMT[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "Content-Type: application/json[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "Transfer-Encoding: chunked[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "Connection: keep-alive[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "Server: cloudflare[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "X-Railway-Edge: railway/europe-west4-drams3a[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "X-Railway-Request-Id: gRsFQ0tmQSa0crLenTga3g[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "X-Hikari-Trace: cdg1.e9jw[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "Cf-Cache-Status: DYNAMIC[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=RZ1bj%2BS2PrvdzqfYcThEEVNKf9D%2FnTmkeh2aCoGPeL0TvU5tis%2FWOPqEFQBvVNeXQIbms%2FpSUbQcmX620b1Y%2BfeqajD%2FxSvN3Z7zY%2FQXGeMhS5hqApGUaTjven1GR6hkXHi2LT7ZL33bsl8MeA%3D%3D"}]}[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "CF-RAY: a0dcc89eed0a946c-LHR[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "24[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "{"error":"Failed to create booking"}[\r][\n]"
+20:43:34.335 [main] DEBUG org.apache.http.headers - http-outgoing-4 << HTTP/1.1 409 Conflict
+20:43:34.335 [main] DEBUG org.apache.http.headers - http-outgoing-4 << Date: Thu, 18 Jun 2026 19:43:34 GMT
+20:43:34.335 [main] DEBUG org.apache.http.headers - http-outgoing-4 << Content-Type: application/json
+20:43:34.335 [main] DEBUG org.apache.http.headers - http-outgoing-4 << Transfer-Encoding: chunked
+20:43:34.335 [main] DEBUG org.apache.http.headers - http-outgoing-4 << Connection: keep-alive
+20:43:34.335 [main] DEBUG org.apache.http.headers - http-outgoing-4 << Server: cloudflare
+20:43:34.335 [main] DEBUG org.apache.http.headers - http-outgoing-4 << Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+20:43:34.345 [main] DEBUG org.apache.http.headers - http-outgoing-4 << X-Railway-Edge: railway/europe-west4-drams3a
+20:43:34.345 [main] DEBUG org.apache.http.headers - http-outgoing-4 << X-Railway-Request-Id: gRsFQ0tmQSa0crLenTga3g
+20:43:34.345 [main] DEBUG org.apache.http.headers - http-outgoing-4 << X-Hikari-Trace: cdg1.e9jw
+20:43:34.345 [main] DEBUG org.apache.http.headers - http-outgoing-4 << Cf-Cache-Status: DYNAMIC
+20:43:34.345 [main] DEBUG org.apache.http.headers - http-outgoing-4 << Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+20:43:34.345 [main] DEBUG org.apache.http.headers - http-outgoing-4 << Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=RZ1bj%2BS2PrvdzqfYcThEEVNKf9D%2FnTmkeh2aCoGPeL0TvU5tis%2FWOPqEFQBvVNeXQIbms%2FpSUbQcmX620b1Y%2BfeqajD%2FxSvN3Z7zY%2FQXGeMhS5hqApGUaTjven1GR6hkXHi2LT7ZL33bsl8MeA%3D%3D"}]}
+20:43:34.345 [main] DEBUG org.apache.http.headers - http-outgoing-4 << CF-RAY: a0dcc89eed0a946c-LHR
+20:43:34.345 [main] DEBUG org.apache.http.headers - http-outgoing-4 << alt-svc: h3=":443"; ma=86400
+20:43:34.345 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+20:43:34.345 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "0[\r][\n]"
+20:43:34.345 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "[\r][\n]"
+20:43:34.345 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 4][route: {s}->https://automationintesting.online:443] can be kept alive indefinitely
+20:43:34.345 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-4: set socket timeout to 0
+20:43:34.347 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 4][route: {s}->https://automationintesting.online:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+20:43:34.347 [main] DEBUG com.intuit.karate - response time in milliseconds: 223
+2 < 409
+2 < Date: Thu, 18 Jun 2026 19:43:34 GMT
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Server: cloudflare
+2 < Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+2 < X-Railway-Edge: railway/europe-west4-drams3a
+2 < X-Railway-Request-Id: gRsFQ0tmQSa0crLenTga3g
+2 < X-Hikari-Trace: cdg1.e9jw
+2 < Cf-Cache-Status: DYNAMIC
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=RZ1bj%2BS2PrvdzqfYcThEEVNKf9D%2FnTmkeh2aCoGPeL0TvU5tis%2FWOPqEFQBvVNeXQIbms%2FpSUbQcmX620b1Y%2BfeqajD%2FxSvN3Z7zY%2FQXGeMhS5hqApGUaTjven1GR6hkXHi2LT7ZL33bsl8MeA%3D%3D"}]}
+2 < CF-RAY: a0dcc89eed0a946c-LHR
+2 < alt-svc: h3=":443"; ma=86400
+{"error":"Failed to create booking"}
+
+20:43:34.350 [main] ERROR com.intuit.karate - classpath:features/bookroom.feature:42
+Then status 201
+status code was: 409, expected: 201, response time in milliseconds: 223, url: https://automationintesting.online/api/booking, response: 
+{"error":"Failed to create booking"}
+classpath:features/bookroom.feature:42
+]]></system-out>
+  </testcase>
+  <testcase name="runAllApiTests[3][2]" classname="features.TestRunners" time="0.416"/>
+  <testcase name="runAllApiTests[3][3]" classname="features.TestRunners" time="0.376"/>
+  <testcase name="runAllApiTests[3][4]" classname="features.TestRunners" time="1.714"/>
+</testsuite>
